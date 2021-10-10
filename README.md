@@ -1,2 +1,2 @@
-# ForgetMeArt-Site
-Personal Website
+# ForgetMeArt.Site
+Info here.
