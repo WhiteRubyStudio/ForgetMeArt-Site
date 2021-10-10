@@ -1,2 +1,2 @@
-# ForgetMeArt.Site
+# Forget Me Art
 Info here.
