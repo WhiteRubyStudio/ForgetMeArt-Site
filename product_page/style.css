@@ -24,6 +24,14 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60%;
+    color: #4A1250;
+}
+
 h4 {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
@@ -111,14 +119,21 @@ header {
     line-height: 20%;
     font-family: 'Raleway', sans-serif;
     padding-bottom: 50px;
+    text-decoration: none;
 }
 
 .product img {
     border-radius:15px 15px 0 0; 
 }
 
+.product h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
 .product p {
-    margin -60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -135,4 +150,119 @@ footer {
 
 footer a {
     text-decoration: none;
+}
+
+/* Order Form */
+
+.form {
+    margin: 1.5% 40% 1.5% 5.5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form a {
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+fieldset {
+    margin: 1.5% 0;
+    border: 1px solid #4A1250;
+    border-radius: 5px;
+}
+
+fieldset h4 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    
+}
+
+legend {
+    font-weight: bold;
+}
+
+input, 
+select,
+textarea,
+submit,
+reset {
+    padding: 10px;
+    border: 1px solid #4A1250;
+    border-radius: 5px;
+}
+
+input,
+select,
+textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#state {
+    width: 70px;
+}
+
+#zip {
+    width: 100px;
+}
+
+#amount {
+    width: 75px;
+}
+
+#cardinfo {
+    display: none;
+}
+
+#card:checked ~ #cardinfo {
+    display: block;
+}
+
+#cardnum {
+    width: 160px;
+}
+
+#expiration {
+    width: 130px;
+}
+
+#security {
+    width: 130px;
+}
+
+#billingaddress {
+    display: none;
+}
+
+#different:checked ~ #billingaddress{
+    display: block;
+}
+
+#submit {
+    background-color: #DF86B6;
+    color: white;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#submit:hover {
+    background-color: #b86190;
+}
+
+#reset {
+    background-color: #fffafe;
+    color: #4A1250;
+    font-size: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    transition-duration: 0.4s;
+}
+
+#reset:hover {
+    background-color: #4A1250;
+    color: white;
 }
