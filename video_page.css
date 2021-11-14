@@ -1,0 +1,99 @@
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#myVideo {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    left: 8%;
+    background rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 50px;   
+}
+
+.content p {
+    font-size: 30px;
+}
+
+#audioPlayer {
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    min-width: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+#pauseBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+#pauseBtn:hover {
+    background: #ddd;
+    color: black;  
+}
+
+.playBtn{
+    width: 50px;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 60px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    border: solid #ddd 2px;
+}
+
+.playBtn:hover{
+    background: #ddd;
+    color: black;
+}
+
+.playAudio {
+    display: inline;
+}
+
+#audioContainer {
+    margin-left: 8%;
+    font-size: 25px;
+}
+
+.credit {
+    display: none;
+}
+
+.music-credit:hover + .credit {
+    display: inline-block;
+    background-color: #ddd;
+    color: black;
+    padding: 30px;
+}

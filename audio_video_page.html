@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+    <head>
+        <title>Audio Video Page</title>
+        <link rel="stylesheet" href="video_page.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body style="margin: 0; background-color: black">
+        <div class="video-container">
+            <!-- Video -->
+            <video autoplay muted loop id="myVideo">
+                <source src="media/video/food_and_drink.mp4" type="video/mp4">
+            </video>
+            <div id="audioPlayer">
+                <div id="audioContainer">
+                    <div class="playAudio">
+                        <audio id="airportLounge" class="music" src="media/audio/airport-lounge-by-kevin-macleod-from-filmmusic-io.mp3"></audio>
+                        <button id="btnOne" class="playBtn" onclick="playMusic('airportLounge', 'btnOne')">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <span class="music-credit">Airport Lounge</span>
+                        <div class="credit">Airport Lounge by Kevin MacLeod<br>Link: https://incompetech.filmmusic.io/song/3347-airport-lounge<br>License: https://filmmusic.io/standard-license</div>
+                    </div>
+
+                    <div class="playAudio">
+                        <audio id="backbayLounge" class="music" src="media/audio/backbay-lounge-by-kevin-macleod-from-filmmusic-io.mp3"></audio>
+                        <button id="btnTwo" class="playBtn" onclick="playMusic('backbayLounge', 'btnTwo')">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <span class="music-credit">Backbay Lounge</span>
+                        <div class="credit">Backbay Lounge by Kevin MacLeod<br>Link: https://incompetech.filmmusic.io/song/3408-backbay-lounge<br>License: https://filmmusic.io/standard-license</div>
+                    </div>
+
+                    <div class="playAudio">
+                        <audio id="bossaAntigua" class="music "src="media/audio/bossa-antigua-by-kevin-macleod-from-filmmusic-io.mp3"></audio>
+                        <button id="btnThree" class="playBtn" onclick="playMusic('bossaAntigua', 'btnThree')">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <span class="music-credit">Bossa Antigua</span>
+                        <div class="credit">Bossa Antigua by Kevin MacLeod<br>Link: https://incompetech.filmmusic.io/song/3454-bossa-antigua<br>License: https://filmmusic.io/standard-license</div>
+                    </div>
+
+                    <div class="playAudio">
+                        <audio id="georgeStreetShuffle" class="music" src="media/audio/george-street-shuffle-by-kevin-macleod-from-filmmusic-io.mp3"></audio>
+                        <button id="btnFour" class="playBtn" onclick="playMusic('georgeStreetShuffle', 'btnFour')">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <span class="music-credit">George Street Shuffle</span>
+                        <div class="credit">George Street Shuffle by Kevin MacLeod<br>Link: https://incompetech.filmmusic.io/song/3800-george-street-shuffle<br>License: https://filmmusic.io/standard-license</div>
+                    </div>
+
+                    <div class="playAudio">
+                        <audio id="smoothLovin" class="music" src="media/audio/smooth-lovin-by-kevin-macleod-from-filmmusic-io.mp3"></audio>
+                        <button id="btnFive" class="playBtn" onclick="playMusic('smoothLovin', 'btnFive')">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <span class="music-credit">Smooth Lovin'</span>
+                        <div class="credit">Smooth Lovin by Kevin MacLeod<br>Link: https://incompetech.filmmusic.io/song/4379-smooth-lovin<br>License: https://filmmusic.io/standard-license</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Overlay -->
+            <div class="content">
+                <h1>Grab a slice</h1>
+                <p>Relax with the sound of music.</p>
+                <!-- play/pause -->
+                <button id="pauseBtn" onclick="pauseButton()">Pause</button>
+                
+            </div>
+        </div>
+        
+        <!-- Script for handling video and audio -->
+        <script>
+            var video = document.getElementById("myVideo");
+            var videoBtn = document.getElementById("pauseBtn");
+
+            //Pause and play video, change button
+            function pauseButton() {
+                if (video.paused) {
+                    video.play();
+                    videoBtn.innerHTML = "Pause";
+                } else {
+                    video.pause();
+                    videoBtn.innerHTML = "Play";
+                }
+            }
+
+            //Pause and play music, change button
+            function playMusic(audio, btn) {
+                audio = document.getElementById(audio);
+                audioBtn = document.getElementById(btn);
+
+                if (audio.paused) {
+                    audio.play();
+                    audioBtn.innerHTML = "<i class='fas fa-pause'></i>";
+                } else {
+                    audio.pause();
+                    audioBtn.innerHTML = "<i class='fas fa-play'></i>";
+                }
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/7003ce3762.js" crossorigin="anonymous"></script>
+    </body>
+    
+</html>
