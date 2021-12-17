@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forget Me Art</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Chander A. White's website.">
+        <meta name="author" content="Chander White">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://kit.fontawesome.com/7003ce3762.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="topHeader">
+            <header class="mainHeader">
+                <a class="logoLink" href="index.html"><img class="logo" src="images/Site-Logo.svg"></a>
+            </header>
+            
+            <button class="navButton"><i class="fas fa-bars"></i></button>
+           <nav class="navBar">
+                <ul>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+        </nav>
+        </div>
+
+        <div id="contact--grid">
+            <div id="contact--left">
+                <h1>CONTACT ME</h1>
+                <p>To get in contact with me, you can fill out the form on this page. Your message will be emailed to me and I will respond back within 24-48 hours.</p>
+
+                <p>Please do <b>not</b> put important information such as addresses, birthdays, or credit card numbers in your message.</p>
+            </div>
+
+            <div id="contact--right">
+                <h1>EMAIL FORM</h1>
+                <form action="https://script.google.com/macros/s/AKfycbzukgZX_rCRYiYnkHr1M0aJw9ATiKPr4YzJQzH0Hg/exec" method="post" id="gform">
+
+                    <label for="name">Name or handle</label><br>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="Email">Email Address</label><br>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="subject">Subject line</label><br>
+                    <input type="text" id="subject" name="subject" required><br>
+
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="10" cols="100" maxlength="1200" required></textarea><br>
+
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+
+        </div>
+        <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+        <script src="javascript/app.js"></script>
+    </body>
+</html>
